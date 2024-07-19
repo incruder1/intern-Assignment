@@ -52,7 +52,7 @@ describe('AddUserComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it('should open dialog on openDialog call', () => {
+  it('should Open dialogBox on Click', () => {
     const dialogSpy = spyOn(dialog, 'open').and.returnValue({
       afterClosed: () => of(true),
     } as MatDialogRef<typeof component>);
